@@ -5,9 +5,9 @@ This reposistory will contain the documentation of *Digital System 2 Lab* at **U
 
 - [x] Create a reposistory to contain the labs
 - [x] Add co-author
-- [] Change pdf to markdown files
-- [] Elaborate documentation
-- [] Verify functionality and proofread verilog
+- [ ] Change pdf to markdown files
+- [ ] Elaborate documentation
+- [ ] Verify functionality and proofread verilog
 
 
 # Development
