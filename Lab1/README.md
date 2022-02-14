@@ -33,9 +33,12 @@ Using solely two-input NAND gates, implement a two-input XOR function in a modul
  endmodule
 ```
 
-## Authors: 
+## Authors:
 * [**Jesus Minjares**](https://github.com/jminjares4)
-  * Master of Science in Computer Engineering
+    * Master of Science in Computer Engineering <br>
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&style=flat)](https://www.linkedin.com/in/jesus-minjares-157a21195/) [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white&style=flat)](https://github.com/jminjares4)
 * [**Ismael Holguin**](https://github.com/iholguin6)
-  * Master of Science in Computer Engineering
+    * Master of Science in Computer Engineering <br>
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&style=flat)](https://www.linkedin.com/in/ismael-holguin-5ab421224/) [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white&style=flat)](https://github.com/iholguin6)
+    
    
