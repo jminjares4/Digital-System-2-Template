@@ -64,13 +64,14 @@ module HexAdder(input [3:0]A, input[3:0]B, input C, output [3:0]Sum, output Cout
 endmodule  
 ```
 # Images
-    Circuit Schematic
 
-<img src="images/schematic.png"  height="400">    
+* Circuit Schematic
+
+    <img src="images/schematic.png">    
     
-    Hex Waveform
-
-<img src="images/WaveForm_HexAddr.png"  height="400">
+* Hex Waveform
+    
+    <img src="images/WaveForm_HexAddr.png">
 
 ## Authors:
 * [**Jesus Minjares**](https://github.com/jminjares4)
