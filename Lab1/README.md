@@ -9,6 +9,17 @@ Using solely two-input NAND gates, implement a two-input XOR function in a modul
 **2)** Then, create AND and OR gates using only NAND gates and the inverter module that you created in the first step. Show resulting circuit.<br>
 **3)** Finally, using the AND, OR and the inverter modules created above, implement the XOR function in the form of sum-of-products. Note:  You should  not  use  De  Morgan’s  theorem by  simply  converting  AND-OR  network  to NAND-NAND network. This is not what you are requested to do.
 
+
+## In lab session
+**1)** Implement your modular design using Xilinx Schematic capture (You will need to create new 
+schematic symbols)
+
+**2)** Simulate your design and demonstrate proper behavior of your simulated waveforms to your 
+TA
+
+**3)** Remember to obtain screen images along the way to create your report (Schematics, 
+simulation waveform)
+
 ```verilog
  module Xor_nand(
     input A,
@@ -19,6 +30,13 @@ Using solely two-input NAND gates, implement a two-input XOR function in a modul
 
  endmodule
 ```
+*Requirements:*
+
+- [ ]  Schematic
+- [ ]   Testbench
+- [ ]   Simulation Waveform
+
+
 ## Authors:
 * [**Jesus Minjares**](https://github.com/jminjares4)
     * Master of Science in Computer Engineering <br>
