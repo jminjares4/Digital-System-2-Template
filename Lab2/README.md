@@ -17,7 +17,7 @@ modular manner.
         enough instances of it to create a Hexadecimal adder (Circuit that is able to add one hexadecimal digit to another hexadecimal digit). 
         Show the resulting circuit
 
-# Lab
+# In Lab Session
 1. Implement your design in Xilinx
 2. Simulate your design and demonstrate proper behavior of your simulated
 waveforms to the TA

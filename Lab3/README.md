@@ -6,7 +6,7 @@ The purpose of lab is to familiarize with the process of `ASM` design implementa
 1) Based on the provided `Block Diagram` and final `ASM` Chart, specify the contents of the `ROM` table.  
 2) Specify the contents of the Programming table based on the `ROM` table in part 1.
 
-## In lab session
+## In Lab Session
 **1.** Understand and synthesize all the modules of the ASM design implementation. 
    * Create a 4-bit register using D Flip Flops. 
    * Create the ROM module by using the Programming table created for the prelab.

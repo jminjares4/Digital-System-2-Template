@@ -10,7 +10,7 @@ Using solely two-input NAND gates, implement a two-input XOR function in a modul
 **3)** Finally, using the AND, OR and the inverter modules created above, implement the XOR function in the form of sum-of-products. Note:  You should  not  use  De  Morgan’s  theorem by  simply  converting  AND-OR  network  to NAND-NAND network. This is not what you are requested to do.
 
 
-## In lab session
+## In Lab Session
 **1)** Implement your modular design using Xilinx Schematic capture (You will need to create new 
 schematic symbols)
 
