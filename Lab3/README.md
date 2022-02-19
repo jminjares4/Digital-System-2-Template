@@ -6,6 +6,26 @@ The purpose of lab is to familiarize with the process of `ASM` design implementa
 1) Based on the provided `Block Diagram` and final `ASM` Chart, specify the contents of the `ROM` table.  
 2) Specify the contents of the Programming table based on the `ROM` table in part 1.
 
+## In lab session
+**1.** Understand and synthesize all the modules of the ASM design implementation. 
+   * Create a 4-bit register using D Flip Flops. 
+   * Create the ROM module by using the Programming table created for the prelab.
+
+**2.** In the main schematic, set up the state register and ROM using the circuit diagram 
+provided. YP, NS and the clock should be input markers. HYL, HRL, HW and HDNW 
+should be connected to output markers. Both the present state and next state nets should 
+be connected to output markers.
+
+**3.** Generate a Verilog Test Fixture to perform verification of the HAWK circuit 
+
+**4.** Run the simulation and analyze the behavior of the ASM HAWK using ISim tool:
+
+*Requirements:*
+
+- [ ]  Schematic
+- [ ]   Testbench
+- [ ]   Simulation Waveform
+
 # D-Flip-Flop (DFF) Module
 ```verilog
 module DFF(input D, input clk, output reg Q);
