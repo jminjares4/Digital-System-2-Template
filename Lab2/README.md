@@ -7,16 +7,26 @@ The circuit is to be designed and simulated in XilinxVivado environment.
 Using solely two-input AND gates and OR gates, implement a Hexadecimal Adder in a 
 modular manner.
 
-**1)** First, create a binary Full-adder module: 
+1. First, create a binary Full-adder module: 
         Write down the binary full adder truth table
         Demonstrate you know how to use K-Maps to derive the SOP Boolean equations for Sum and Cout
         Implement the obtained equations using ONLY 2-input AND and OR gates. Show the resulting circuit. 
         
- **2)** Now, create the Hexadecimal adder
+2. Now, create the Hexadecimal adder
         Using a block diagram representation of your full adder (corresponding to step 1 above) show how to connect 
         enough instances of it to create a Hexadecimal adder (Circuit that is able to add one hexadecimal digit to another hexadecimal digit). 
         Show the resulting circuit
-       
+
+# Lab
+1. Implement your design in Xilinx
+2. Simulate your design and demonstrate proper behavior of your simulated
+waveforms to the TA
+3. Remember to obtain screen images along the way to include in your report
+
+*Requirements*
+- [ ] Schematics
+- [ ] TestBench
+- [ ] Simulation waveform
 # Full-adder Module
 ```verilog
 //FullAdder module of two bits 
