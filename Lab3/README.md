@@ -3,7 +3,7 @@
 The purpose of lab is to familiarize with the process of ASM design implementation using **Xilinx Vivado**.
 
 ## Prelab
-1) Based on the provided `Block Diagram` and final `ASM Chart`, specify the contents of the `ROM` table.  
+1) Based on the provided `Block Diagram` and final `ASM` Chart, specify the contents of the `ROM` table.  
 2) Specify the contents of the Programming table based on the ROM table in part 1.
 
 # D-Flip-Flop (DFF) Module
