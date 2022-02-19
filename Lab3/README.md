@@ -1,11 +1,10 @@
-# Lab 3 ASM implementation using Xilinx ISE HAWK (High-intensity Activated crossWalK) :zap:
+# Lab 3 ASM implementation using Xilinx ISE HAWK :zap:
 
-The purpose of lab is to familiarize with the process of ASM design implementation using Xilinx Vivado
+The purpose of lab is to familiarize with the process of ASM design implementation using **Xilinx Vivado**.
 
 ## Prelab
-1) Based on the provided Block Diagram and final ASM Chart, specify the contents of the 
-ROM table.  
-2) Specify the contents of the Programming table based on the ROM table in part 1).
+1) Based on the provided `Block Diagram` and final `ASM Chart`, specify the contents of the `ROM` table.  
+2) Specify the contents of the Programming table based on the ROM table in part 1.
 
 # D-Flip-Flop (DFF) Module
 ```verilog
@@ -13,7 +12,7 @@ module DFF(input D, input clk, output reg Q);
     //code
 endmodule
 ```
-# D-Flip-Flop 4 Bit Regstier Module
+# D-Flip-Flop 4 Bit Register Module
 ```verilog
 module DFF4Bit(input [3:0] D, input clk, output [3:0]Q);
     //code
