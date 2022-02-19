@@ -23,7 +23,7 @@ modular manner.
 waveforms to the TA
 3. Remember to obtain screen images along the way to include in your report
 
-*Requirements*
+*Requirements:*
 - [ ] Schematics
 - [ ] TestBench
 - [ ] Simulation waveform
