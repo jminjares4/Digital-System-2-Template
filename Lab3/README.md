@@ -20,9 +20,6 @@ module DFF4Bit(input [3:0] D, input clk, output [3:0]Q);
 endmodule
 ```
 # ROM Table
-<details>
-    <summary> ROM Table code </summary><br>
-
 ```v
 module ROM(
             input [3:0]P,
@@ -33,8 +30,6 @@ module ROM(
     //code
 endmodule
 ```
-</details><br>
-
 # ASM Module
 ```verilog
 module ASM(
@@ -46,7 +41,7 @@ module ASM(
     output HW,
     output HDNW);
     // 4 bit DFF register 
-    
+
     // ROM table    
 endmodule
 ```
