@@ -27,3 +27,9 @@ This reposistory will contain the documentation of *Digital System 2 Lab* at **U
 [![Outlook](https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white&style=flat)](mailto:iholguin6@miners.utep.edu) 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&style=flat)](https://www.linkedin.com/in/ismael-holguin-5ab421224/) [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white&style=flat)](https://github.com/iholguin6)
     
+
+
+
+![C](https://img.shields.io/badge/Code-C-informational?style=flat&logo=C&color=003B57)
+![C++](https://img.shields.io/badge/Code-C++-informational?style=flat&logo=Cplusplus&color=61DAFB)
+![Python](https://img.shields.io/badge/Code-Python-informational?style=flat&logo=Python&color=764ABC)
