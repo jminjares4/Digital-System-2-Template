@@ -90,6 +90,10 @@ module Lab6( input [7:0] A,
 endmodule
 ```
 
+
+## Lab 6 Output Schematic
+<img src="lab6_schematic.png">
+
 # Software Development
 | **Software** | **Environment** |
 | :---:    | :---:       |
