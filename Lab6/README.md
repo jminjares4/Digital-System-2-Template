@@ -21,6 +21,7 @@ module Mux(
     input [7:0] d,
     output [7:0] MuxOut 
     );
+    //code
 endmodule
 ```
 
@@ -30,12 +31,7 @@ module DFlipFlop(
     input D, Clk,
     output reg Q
     );
-    initial
-        Q = 0;
-    always @ (posedge Clk)
-    begin   
-        Q <= D;
-    end
+    //code
 endmodule
 ```
 
@@ -48,16 +44,7 @@ module Reg(
     output [7:0]D
     
     );
-   //instantiate dff
-   DFlipFlop dff0(.D(A[0]), .Clk(Clk), .Q(D[0]));
-   DFlipFlop dff1(.D(A[1]), .Clk(Clk), .Q(D[1]));
-   DFlipFlop dff2(.D(A[2]), .Clk(Clk), .Q(D[2]));
-   DFlipFlop dff3(.D(A[3]), .Clk(Clk), .Q(D[3]));
-   DFlipFlop dff4(.D(A[4]), .Clk(Clk), .Q(D[4]));
-   DFlipFlop dff5(.D(A[5]), .Clk(Clk), .Q(D[5]));
-   DFlipFlop dff6(.D(A[6]), .Clk(Clk), .Q(D[6]));
-   DFlipFlop dff7(.D(A[7]), .Clk(Clk), .Q(D[7]));
-  
+    //code
 endmodule
 ```
 
@@ -65,7 +52,7 @@ endmodule
 ```verilog
 module K0( input [7:0] R0, input [7:0] R1,
            output [7:0] out );
-
+    //code
 endmodule
 ```
 
@@ -73,7 +60,7 @@ endmodule
 ```verilog
 module K1( input [7:0] R0, input [7:0] R1,
            output [7:0] out );
-
+    //code
 endmodule
 ```
 
@@ -81,7 +68,7 @@ endmodule
 ```verilog
 module K2( input [7:0] R0, input [7:0] R1,
            output [7:0] out );
-
+    //code
 endmodule
 ```
 
@@ -89,7 +76,7 @@ endmodule
 ```verilog
 module K3( input [7:0] R0, input [7:0] R1,
            output [7:0] out);
-
+    //code
 endmodule
 ```
 
@@ -99,7 +86,7 @@ module Lab6( input [7:0] A,
              input Clk,
              input [1:0] Sel,
              output [7:0] MuxOut);
-
+    //code
 endmodule
 ```
 
