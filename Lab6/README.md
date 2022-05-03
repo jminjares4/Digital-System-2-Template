@@ -1,3 +1,107 @@
+# Lab #6: Register Transfer and Datapaths
+
+A register cell is to be designed for an 8-bit register R0 that has the following Register Transfer Functions:
+
+- [ ] K0: R0!R0 ⊕ R1 
+- [ ] K1: R0!R0 ∨ R1 
+- [ ] K2: R0!(R0 ⊕ R1)’
+- [ ] K3: R0!R0 ^ R1
+
+• **A)** Draw the block diagram for the implementation of the Register Transfer Functions listed above.
+
+• **B)** Draw the logic diagram (for one bit) of the hardware implementation (of the Register Transfer Functions listed above) by using functional block symbols for the registers (RO and Rl) and using a multiplexer.
+
+## MUX
+```verilog
+module Mux(
+    input [1:0] Sel,
+    input [7:0] a,
+    input [7:0] b,
+    input [7:0] c,
+    input [7:0] d,
+    output [7:0] MuxOut 
+    );
+endmodule
+```
+
+## D-Flip-Flop
+```verilog
+module DFlipFlop(
+    input D, Clk,
+    output reg Q
+    );
+    initial
+        Q = 0;
+    always @ (posedge Clk)
+    begin   
+        Q <= D;
+    end
+endmodule
+```
+
+## Register
+```verilog
+module Reg(
+
+    input [7:0]A,
+    input Clk,
+    output [7:0]D
+    
+    );
+   //instantiate dff
+   DFlipFlop dff0(.D(A[0]), .Clk(Clk), .Q(D[0]));
+   DFlipFlop dff1(.D(A[1]), .Clk(Clk), .Q(D[1]));
+   DFlipFlop dff2(.D(A[2]), .Clk(Clk), .Q(D[2]));
+   DFlipFlop dff3(.D(A[3]), .Clk(Clk), .Q(D[3]));
+   DFlipFlop dff4(.D(A[4]), .Clk(Clk), .Q(D[4]));
+   DFlipFlop dff5(.D(A[5]), .Clk(Clk), .Q(D[5]));
+   DFlipFlop dff6(.D(A[6]), .Clk(Clk), .Q(D[6]));
+   DFlipFlop dff7(.D(A[7]), .Clk(Clk), .Q(D[7]));
+  
+endmodule
+```
+
+## XOR
+```verilog
+module K0( input [7:0] R0, input [7:0] R1,
+           output [7:0] out );
+
+endmodule
+```
+
+## OR
+```verilog
+module K1( input [7:0] R0, input [7:0] R1,
+           output [7:0] out );
+
+endmodule
+```
+
+## NOR
+```verilog
+module K2( input [7:0] R0, input [7:0] R1,
+           output [7:0] out );
+
+endmodule
+```
+
+## AND
+```verilog
+module K3( input [7:0] R0, input [7:0] R1,
+           output [7:0] out);
+
+endmodule
+```
+
+## Lab 6 
+```verilog
+module Lab6( input [7:0] A,
+             input Clk,
+             input [1:0] Sel,
+             output [7:0] MuxOut);
+
+endmodule
+```
 
 # Software Development
 | **Software** | **Environment** |
