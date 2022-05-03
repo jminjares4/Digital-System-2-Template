@@ -5,11 +5,10 @@ This reposistory will contain the documentation of *Digital System 2 Lab* at **U
 
 - [x] Create a reposistory to contain the labs
 - [x] Add co-author
-- [x] Start working on Lab 1
-- [x] Update Readme for Lab 2
-- [ ] Change pdf to markdown files
-- [ ] Elaborate documentation
-- [ ] Verify functionality and proofread verilog
+- [x] Start working on Lab 6-9
+  - [x] Added waveforms and output to each lab
+- [ ] Proofread each lab
+
 
 # Development
 | **Software** | **Environment** |
