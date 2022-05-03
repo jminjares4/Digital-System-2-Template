@@ -105,7 +105,7 @@ endmodule
     //code
     endmodule
 ```
-#Decoder 2
+# Decoder 2
 ```verilog
   module DEC2(
     input [1:0]S,
@@ -115,7 +115,7 @@ endmodule
     endmodule
     
 ```
-#ROM
+# ROM
 ```verilog 
   module ROM(
     input [5:0]A,
@@ -124,7 +124,7 @@ endmodule
     //code
   endmodule
 ```
-#ASM
+# ASM
 ```verilog
   module ASM(
     input YFULL, NCTO, NEMPTY, NHOT, YSTART, Clk,
@@ -136,21 +136,6 @@ endmodule
 ```
 
 
-# Constraint File
-```verolog
-# Disable Clock
-set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets Clk_IBUF]
-
-# Set YP as a switch
-set_property PACKAGE_PIN V17 [get_ports YP]
-    set_property IOSTANDARD LVCMOS33 [get_ports YP]
-
-# Set Clk as a push button
-set_property PACKAGE_PIN W19 [get_ports Clk]
-    set_property IOSTANDARD LVCMOS33 [get_ports Clk]
-
-# Complete the rest
-```
 # Software Development
 | **Software** | **Environment** |
 | :---:    | :---:       |
