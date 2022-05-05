@@ -1,4 +1,39 @@
-# ALU Module
+# Lab 7: Familiarization with ALU
+## Objective
+To become familiar with the arithmetic Logic Unit(ALU) and the concepts relating to implementation of ALUs
+
+## Description
+Design and implement an 8-bit Arithmetic Logic Unit(ALU). An ALU is a combinational circuit that performs arithmetic and logic micro-operations on a pair of n-bit operands(in our case, A[7:0] and B[7:0]). The operations performed by an ALU are controlled by a set of operation-selected inputs. 
+
+Your 8-bit ALU will have 4 operation-select inputs: S2,S1,S0, and Cin. S2 will be used as the MUX select to choose the mode of operation(S2=0 chooses arithmetic unit, S2=1 chooses logic unit). The block diagram is shown in Figure 1 below.
+
+## Figure 1
+<img src="Figure 1.png">
+
+## ALU Functions - Table 1
+<img src="ALU_functions.png">
+
+## PreLab(30%) DUE AT BEGINNING OF LAB
+Design an 8-bit ALU that performs the operations listed in Table 1
+
+**1)** Draw the block diagram for the Arithmetic Unit. Additionally show logic diagram for each of the two blocks on Arithmetic Unit(make sure to show the optimized implementation of the "transformation" block) 
+
+**2)** Draw one stage of the Logic Unit circuit
+
+**3)** Draw a single stage of the ALU
+
+## In Lab Session(50%)
+Using Xilinx, implement the design developed on the pre-lab activities 
+
+* You will slighly modify the circuit developed for Lab 6 in order to use it as the logic Module.
+* You can use a standard 8-bit adder module from Xilinx library as part of Arithmetic Unit
+* The Xilinx environment will allow to create a modular design and simulate its operation in order to verify functionality
+* demonstrate your design (simulation to verify *all* 12 ALU operations) before the end of the lab session.
+
+
+
+
+## ALU Module
 ```verilog
 module ALU(
     input [7:0] A,
@@ -18,7 +53,7 @@ module ALU(
         end
 endmodule
 ```
-# Constraint 
+## Constraint 
 ```verilog
     set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets Clk_IBUF]
     #input
