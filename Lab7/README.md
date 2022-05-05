@@ -1,3 +1,37 @@
+# ALU Module
+```verilog
+module ALU(
+    input [7:0] A,
+    input [7:0] B,
+    input [2:0] Sel,
+    input Cin,
+    output [7:0] Out,
+    output Cout
+    );
+    
+    always @ (Sel, Cin)
+    begin
+    case(Sel)
+    3'b000 : case(Cin)
+        
+        endcase
+        end
+endmodule
+```
+# Constraint 
+```verilog
+    set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets Clk_IBUF]
+    #input
+    set_property PACKAGE_PIN V17 [get_ports A[0]]                
+    set_property IOSTANDARD LVCMOS33 [get_ports A[0]]
+    #output
+    set_property PACKAGE_PIN U16 [get_ports {Out[0]}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {Out[0]}]
+```
+
+
+## Lab 7 Output Schematic
+<img src="Lab7_schematic.png">
 
 
 # Software Development
