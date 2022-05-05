@@ -8,7 +8,7 @@ Design and implement an 8-bit Arithmetic Logic Unit(ALU). An ALU is a combinatio
 Your 8-bit ALU will have 4 operation-select inputs: S2,S1,S0, and Cin. S2 will be used as the MUX select to choose the mode of operation(S2=0 chooses arithmetic unit, S2=1 chooses logic unit). The block diagram is shown in Figure 1 below.
 
 ## Figure 1
-<img src="Figure 1.png">
+<img src="Figure1.png">
 
 ## ALU Functions - Table 1
 <img src="ALU_functions.png">
