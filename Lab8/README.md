@@ -169,8 +169,8 @@ module Datapath(
   //code
 endmodule
 ```
-## Lab 7 Output Schematic
-<img src="Lab7_schematic.png">
+## Lab 8 utput Schematic
+<img src="schematic.png">
 
 # Software Development
 | **Software** | **Environment** |
