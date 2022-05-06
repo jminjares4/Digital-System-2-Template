@@ -1,38 +1,61 @@
 
 # Lab #5: Traffic Light Controller with Priority to Emergency Vehicles using MSI and LSI circuits  :zap:
 
-# Objective: 
+## Objective: 
 The purpose of this lab is to implement an ASM design of a Traffic Light Controller using 
 Xilinx Vivado environment and verify operation in the simulator.
 
-Prelab (30%) *Due AT BEGINNING OF LAB
-**1.** Complete the ASM chart shown in Figure 1 by specifying the missing HLO output 
-patterns, LLT timer values in the appropriate states (i.e. states where the controller must 
+## Prelab (30%) Due AT BEGINNING OF LAB
+**1.** **Complete the ASM chart** shown in Figure 1 by specifying the missing ***HLO output 
+patterns, LLT timer values*** in the appropriate states (i.e. states where the controller must 
 load the output and/or load the timer). **Make sure to include your calculations on how 
 you obtained the timer values to receive credit for your answer. (Otherwise, no credit 
 will be given)
 
 **2.** Analyze this information and determine how to use each component to match 
 the circuit diagram shown in Figure 2. Turn in the following: 
-    **a)** Draw one instance of FD4CE symbol and label each I/O with the corresponding 
-            connections to use this as the output register
-    **b)** Draw one instance of CB4CLE symbol and label each I/O with the corresponding 
-            connections to use this as the timer
-    **c)** Draw another instance of CB4CLE symbol and label each I/O with the 
-            corresponding connections to use this as the Next State Counter
+    
+**a)** Draw one instance of **FD4CE** symbol and label each I/O with the corresponding 
+connections to use this as the output register
+    
+**b)** Draw one instance of **CB4CLE** symbol and label each I/O with the corresponding 
+connections to use this as the timer
+    
+**c)** Draw another instance of **CB4CLE** symbol and label each I/O with the 
+corresponding connections to use this as the Next State Counter
 
 **3.** Specify the contents of the full Programming table
 
 
-# In lab session (50%) 
+## In lab session (50%) 
 
-**a)** Implement the traffic light controller in a schematic capture by using your 
-        ROM controller module (from Prelab) and MSI/LSI circuits like counters, 
+**a)** Implement the traffic light controller in a **schematic capture** by using your 
+        ROM controller module (from Prelab) and **MSI/LSI** circuits like counters, 
         registers, MUXes and decoders as shown in the Circuit Diagram on Figure 2. 
 
 **b)** Generate Verilog test fixture.
 
-**c)** Perform waveform verification using ISim tool.
+**c)** Perform waveform verification using ISim tool.The partially completed ASM Chart           (shown in Figure 1) belongs to a traffic light controller used in an intersection that normally allows only north-south traffic to go through. Only when east and westbound traffic sensors are activated will the traffic lights change to halt north-south traffic. In addition, an emergency input will set all traffic lights to red. When the emergency input is deactivated, the lights should return 
+to the north-south green/ east-west red condition after a delay. The delay is given to 
+allow a following emergency vehicle to activate the emergency input and keep the lights 
+set to red. 
+
+The corresponding signal definitions and circuit diagram of such a controller are shown 
+in Figure 2. 
+
+**Determine the timer values** that will cause the following behavior: 21 seconds for 
+green lights and 9 seconds for yellow lights. The emergency vehicle signal will 
+cause an all-red light condition that lasts 12 seconds. All timer values should be 
+calculated based on a 1.5 second system clock cycle. Don’t forget that ***all*** 
+states between output register changes (light transitions) must be included when 
+calculating delays.
+
+## Figure 1: ASM Chart – Partially completed (use for prelab part 1)
+<img src="ASM_flowchart.png">
+
+## Circuit Diagram
+<img src="Schematic.png">
+<img src="legend.png">
 
 *Requirements:*
 
