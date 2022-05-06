@@ -1,3 +1,38 @@
+# Lab #9: Familiarization with Control Unit
+
+## Objective:
+To combine a set of registers,counters,memory and logic modules to create a control unit for a simple computer
+
+## Lab Description
+In this laboratory your assignment consists of building a simple control unit by using a PC, an IR, a mapping ROM and ROM memory modules to store a user's program, multiplexers to select the appropriate address/data for the modules, status logic and CAR logic to control the CAR and ultimatly generate a final Control Word stored in a memory module that will execute specific instructions.
+
+Become familiar with the Block Diagram of a Simple Computer shown in Figure 1 below. In particular, analyze the portion within the Control Unit area denoted by the dashed red line.
+
+## PreLab(30%) DUE AT THE BEGINNING OF LAB
+Using the provided diagram (Figure1), along with the Control Word tables, write the symbolic microprogram (use the coding sheet template provided at the end of this handout) for the following independent instructions(each instruction goes back to IF after execution):
+
+1. R1 R2+R3
+2. R0 sl R3
+3. R3 R2 XOR R2
+4. R1 INC R2
+5. R0 (R0)’
+6. R2 R4-21h
+7. R3 MEM[R3]
+8. MEM[R3]R1
+9. PC PC+ 1 
+
+## Figure 1
+<img src="figure1.png">
+
+## Control Word
+<img src="figure2.png">
+<img src="figure3.png">
+
+*Requirements:*
+
+- [ ]  Schematic
+- [ ]   Testbench
+- [ ]   Simulation Waveform
 
 # Software Development
 | **Software** | **Environment** |
