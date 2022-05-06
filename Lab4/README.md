@@ -1,16 +1,14 @@
 # Lab 4: Washing Machine Controller  :zap:
-
-The purpose of lab is to complete an ASM design with MSI components 
-for a Washing Machine controller. The design must be implemented using 
-Xilinx ISE environment and verify operation on ISim simulator.
+The purpose of lab is to complete an ASM design with MSI components for a Washing Machine controller. The design must be implemented using Xilinx ISE environment and verify operation on ISim simulator.
 
 ## Prelab
   Submit the following 3 items:
-  1) Based on provided Block Diagram, Circuit Diagram and final ASMChart,
-      specify contents of the ROM table 
-  2) Specify the contents of the full Programming table.
-  3. Submit your rom_controller Verilog module, using the values 
-      obtained in the previous step. 
+  
+  **1)** Based on provided *Block Diagram, Circuit Diagram and final ASM Chart*, specify **contents of the ROM** table 
+  
+  **2)** Specify the contents of the full Programming table.
+  
+  **3)** **Submit your rom_controller Verilog module**, using the values obtained in the previous step. 
 
 ## In Lab Session (50%)
 **1.** Generate a Xilinx Project using modular design to implement your ASM 
@@ -22,13 +20,68 @@ Xilinx ISE environment and verify operation on ISim simulator.
 
 **3.** Arrange I/O in meaningful order. Use different colors for waveforms in ISim. 
 
-**4.** Verify and demonstrate to TA the full washing machine cycle
+**4.** Verify and **demonstrate to TA the full washing machine cycle** (complete all state transitions shown in ASM chart)  
 
-*Requirements:*
+## Lab Description: Washing Machine Controller
+The washing operation begins when the user turns ON the “start” button 
+which makes signal YSTART=1. Once the process has started, the 
+controller will assert the appropriate signals to fill the washer’s tub with 
+either cold or hot water (selected by the user) depending on the **NHOT** 
+input (**NHOT** is True when hot water is desired). The washer agitates 
+the tub until a cycle timer (**NCTO**) indicates that the cycle is finished. 
+The controller then drains the soapy water and fills the machine with 
+cold water for the rinse cycle. The washer agitates again until the cycle 
+timer indicates that the cycle is finished. The controller drains the rinse 
+water and finally enters the spin cycle, spinning the clothes dry until the 
+cycle timer indicates the end of the cycle. Assume that if you want to 
+pause (halt) the washing process (example: user opens the door, check 
+on clothes, etc), the **YSTART** button must be turned into the OFF 
+position and in such case **the washer will hold the current state** until 
+the start button is turned ON again to continue.
 
-- [ ]  Schematic
-- [ ]   Testbench
-- [ ]   Simulation Waveform
+## Signal Definition
+***INPUTS:***
+
+**YSTART** – Active high, from user, when button is turned ON (set to 1) 
+it means the user wants to start the washing process. When turned OFF 
+(cleared to 0) it means the user wants to stop the process.
+
+**NHOT** – Active low, from user, when user selects hot water this signal 
+will be asserted (true), if false NHOT will be 1 and cold water will be 
+used.
+
+**YFULL** – Active high, from the washing machine’s tub sensor. When 
+the tub is completely full a 1 is sent, otherwise it sends a 0
+
+**NEMPTY** – Active low, from the washing machine’s tub sensor. When 
+the tub is completely empty a 0 is sent, otherwise it sends a 1
+
+**NCTO** – Active low, from the washing machine cycle timer. When the 
+cycle is over (counter times out), the timer sends a 0, otherwise it sends 
+a 1 until the completion of the cycle designated time.
+
+***OUTPUTS:*** 
+
+**LCOLDW** - Active low, assertion activates Cold water valve
+
+**HWIN** - Active high, assertion causes pump to put water into tub
+
+**HAGIT** - Active high, assertion agitates the tub
+
+**HWOUT**-Active high, assertion causes pump to take water out of tub 
+
+**LSPIN** -Active low, assertion spins the motors for drying clothes 
+
+**HBELL**-Active high, assertion rings a bell to indicate washing is completed
+
+  *Find the corresponding final ASM Chart and Circuit Diagram in the following pages
+
+
+## I ASM Chart
+<img src="ASM_flowchart.png">
+
+## II Schematic
+<img src="Schematic.png">
 
 # D-Flip-Flop (DFF) Module
 ```verilog
@@ -134,6 +187,11 @@ endmodule
     endmodule
     
 ```
+*Requirements:*
+
+- [ ]  Schematic
+- [ ]   Testbench
+- [ ]   Simulation Waveform
 
 
 # Software Development
