@@ -94,6 +94,19 @@ endmodule
 ## Lab 6 Output Schematic
 <img src="lab6_schematic.png">
 
+## Constaints
+```verilog
+    set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets Clk_IBUF]
+    #inputs
+    set_property PACKAGE_PIN W19 [get_ports Clk]               
+    set_property IOSTANDARD LVCMOS33 [get_ports Clk]
+    #outputs
+    set_property PACKAGE_PIN U15 [get_ports {MuxOut[0]}]
+    set_property IOSTANDARD LVCMOS33 [get_ports {MuxOut[0]}] 
+
+```
+
+
 # Software Development
 | **Software** | **Environment** |
 | :---:    | :---:       |
