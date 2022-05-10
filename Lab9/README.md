@@ -1,4 +1,4 @@
-# Lab #9: Familiarization with Control Unit
+# Lab 9: Familiarization with Control Unit :zap:
 
 ## Objective:
 To combine a set of registers,counters,memory and logic modules to create a control unit for a simple computer

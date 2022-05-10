@@ -2,15 +2,15 @@
 This reposistory will contain the documentation of *Digital System 2 Lab* at **University of Texas at El Paso** (`UTEP`). Previously, the labs where given in pdf format, however everyone is using version control for development such as Git. Therefore, the main purpose of this labs is to elaborate the previous labs.
 
 # Labs
-- [Lab 1](https://github.com/jminjares4/Digital-System-2-Template/tree/main/Lab1)
-- [Lab 2](https://github.com/jminjares4/Digital-System-2-Template/tree/main/Lab2)
-- [Lab 3](https://github.com/jminjares4/Digital-System-2-Template/tree/main/Lab3)
-- [Lab 4](https://github.com/jminjares4/Digital-System-2-Template/tree/main/Lab4)
-- [Lab 5](https://github.com/jminjares4/Digital-System-2-Template/tree/main/Lab5)
-- [Lab 6](https://github.com/jminjares4/Digital-System-2-Template/tree/main/Lab6)
-- [Lab 7](https://github.com/jminjares4/Digital-System-2-Template/tree/main/Lab7)
-- [Lab 8](https://github.com/jminjares4/Digital-System-2-Template/tree/main/Lab8)
-- [Lab 9](https://github.com/jminjares4/Digital-System-2-Template/tree/main/Lab9)
+- [Lab 1: XOR implemented with NAND gates](https://github.com/jminjares4/Digital-System-2-Template/tree/main/Lab1)
+- [Lab 2: Hexadecimal Full Adder](https://github.com/jminjares4/Digital-System-2-Template/tree/main/Lab2)
+- [Lab 3: ASM implementation using Xilinx ISE HAWK](https://github.com/jminjares4/Digital-System-2-Template/tree/main/Lab3)
+- [Lab 4: Washing Machine Controller](https://github.com/jminjares4/Digital-System-2-Template/tree/main/Lab4)
+- [Lab 5: Traffic Light Controller with Priority to Emergency Vehicles using MSI and LSI circuits](https://github.com/jminjares4/Digital-System-2-Template/tree/main/Lab5)
+- [Lab 6: Register Transfer and Datapaths](https://github.com/jminjares4/Digital-System-2-Template/tree/main/Lab6)
+- [Lab 7: Familiarization with ALU](https://github.com/jminjares4/Digital-System-2-Template/tree/main/Lab7)
+- [Lab 8: Familiarization with Datapaths](https://github.com/jminjares4/Digital-System-2-Template/tree/main/Lab8)
+- [Lab 9: Familiarization with Control Unit](https://github.com/jminjares4/Digital-System-2-Template/tree/main/Lab9)
 
 # Development
 | **Software** | **Environment** | **Documentation**|

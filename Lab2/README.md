@@ -1,4 +1,4 @@
-# Lab 2 Hexadecimal Full Adder :zap:
+# Lab 2: Hexadecimal Full Adder :zap:
 The purpose of this lab is to review and become familiar with the design and testing of 
 combinational circuits using modular design (block symbols) in a computer-aided design tool. 
 The circuit is to be designed and simulated in XilinxVivado environment. 

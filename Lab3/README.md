@@ -1,4 +1,4 @@
-# Lab 3 ASM implementation using Xilinx ISE HAWK :zap:
+# Lab 3: ASM implementation using Xilinx ISE HAWK :zap:
 
 The purpose of lab is to familiarize with the process of `ASM` design implementation using **Xilinx Vivado**.
 

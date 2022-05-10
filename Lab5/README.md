@@ -1,5 +1,5 @@
 
-# Lab #5: Traffic Light Controller with Priority to Emergency Vehicles using MSI and LSI circuits  :zap:
+# Lab 5: Traffic Light Controller with Priority to Emergency Vehicles using MSI and LSI circuits  :zap:
 
 ## Objective: 
 The purpose of this lab is to implement an ASM design of a Traffic Light Controller using 

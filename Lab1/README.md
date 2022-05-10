@@ -1,4 +1,4 @@
-# Lab 1 XOR implemented with NAND gates :zap:
+# Lab 1:  XOR implemented with NAND gates :zap:
 
 The purpose of this lab is to continue to become familiar with the implementation, testing and verification of  simple  circuits  using  a  computer-aided  design  tool.  In  addition,  you  will  learn  how  to  create  a schematic symbol and use instances of it to implement your design.
 

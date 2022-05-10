@@ -1,4 +1,4 @@
-# Lab #6: Register Transfer and Datapaths
+# Lab 6: Register Transfer and Datapaths :zap:
 
 A register cell is to be designed for an 8-bit register R0 that has the following Register Transfer Functions:
 

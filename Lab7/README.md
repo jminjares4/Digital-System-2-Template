@@ -1,4 +1,4 @@
-# Lab 7: Familiarization with ALU
+# Lab 7: Familiarization with ALU :zap:
 ## Objective
 To become familiar with the arithmetic Logic Unit(ALU) and the concepts relating to implementation of ALUs
 

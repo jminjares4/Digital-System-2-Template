@@ -1,4 +1,4 @@
-#  Lab #8: Familiarization with Datapaths
+#  Lab 8: Familiarization with Datapaths :zap:
 
 ## Objective:
 To combine a set of registers with a function unit ( containing ALU
