@@ -48,7 +48,24 @@ create this Datapath.
 The Xilinx environment will allow you to simulate the datapath operation in order
 to verify correct operation. Your datapath should be able to implement the desired microoperation selected by the FS code as described on Table 1:
 ## Table 1
-<img src="table1.png">
+| **FS**    | **Select (MF)** | **Select (G)** | **Select (H)** | **Micro-operation** |
+| :---      | :---            | :---           | :----          | :----               |
+| 0 00 00   | 0               | 0000           | **00**         | G = A               |
+| 0 00 01   | 0               | 0001           | **00**         | G = A + 1           |
+| 0 00 10   | 0               | 0010           | **00**         | G = A + B           |
+| 0 00 11   | 0               | 0011           | **00**         | G = A + B + 1       |
+| 0 01 00   | 0               | 0100           | **01**         | G = A + B'          |
+| 0 01 01   | 0               | 0101           | **01**         | G = A + B' + 1      |
+| 0 01 10   | 0               | 0110           | **01**         | G = A - 1           |
+| 0 01 11   | 0               | 0111           | **01**         | G = A               |
+| 0 10 00   | 0               | 1000           | **10**         | G = A XOR B         |
+| 0 10 10   | 0               | 1010           | **10**         | G = A OR B          |
+| 0 11 00   | 0               | 1100           | **11**         | G = (A XOR B)'      |
+| 0 11 10   | 0               | 1110           | **11**         | G = (A AND B)       |
+| 1 00 00   | 1               | **0000**       | 00             | G = B               |
+| 1 01 00   | 1               | **0100**       | 01             | G = sl B            |
+| 1 10 00   | 1               | **1000**       | 11             | G = sr B            |
+| 1 11 00   | 1               | **1000**       | 11             | G = 0's             |
 
 ## Decoder - 2Bit
 ```verilog
