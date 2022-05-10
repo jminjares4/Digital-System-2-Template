@@ -11,7 +11,21 @@ Your 8-bit ALU will have 4 operation-select inputs: S2,S1,S0, and Cin. S2 will b
 <img src="figure1.png">
 
 ## ALU Functions - Table 1
-<img src="ALU_functions.png">
+
+| **S2**   | **S1**    | **S0**   | **Cin**  | **Operation** | **Function** |
+| :--- | :---  | :--- | :--- |  :---     | :---     |
+| 0    | 0     |  0   | 0    | G = A     | Transfer A |
+| 0    | 0     |  0   | 1    | G = A + 1 | Increment A |
+| 0    | 0     |  1   | 0    | G = A + B    | Addition  |
+| 0    | 0     |  1   | 1    | G = A  + B + 1  | Add with carry input 1 |
+| 0    | 1     |  0   | 0    | G = A + B'     | A plus 1's complement of B |
+| 0    | 1     |  0   | 1    | G = A + B' + 1     | Subtraction |
+| 0    | 1     |  1   | 0    | G = A - 1    | Decrement A |
+| 0    | 1     |  1   | 1    | G = A    | Transfer A |
+| 1    | 0     |  0   | x    | G = A XOR B    | XOR  |
+| 1    | 0     |  1   | x    | G = A OR B    |  OR |
+| 1    | 1     |  0   | x    | G = (A XOR B)'     | (XOR)' |
+| 1    | 1     |  1   | x    | G = A AND B    | AND |
 
 ## PreLab(30%) DUE AT BEGINNING OF LAB
 Design an 8-bit ALU that performs the operations listed in Table 1
