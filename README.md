@@ -1,3 +1,5 @@
+<img src="images/ut_el_paso_ap_png.jpeg">
+
 # Digital-System-2-Template :zap:
 This reposistory will contain the documentation of *Digital System 2 Lab* at **University of Texas at El Paso** (`UTEP`). Previously, the labs where given in pdf format, however everyone is using version control for development such as Git. Therefore, the main purpose of this labs is to elaborate the previous labs.
 
